@@ -1,19 +1,29 @@
 {
-	"name": "server",
-	"version": "1.0.0",
-	"main": "index.js",
-	"license": "MIT",
-	"type": "module",
-	"scripts": {
-		"dev": "nodemon server.js"
-	},
-	"dependencies": {
-		"bcrypt": "^5.0.1",
-		"dotenv": "^16.0.1",
-		"express": "^4.18.1",
-		"jsonwebtoken": "^8.5.1",
-		"mongoose": "^6.4.3",
-		"semver": "^7.3.7",
-		"validatorjs": "^3.22.1"
-	}
+  "name": "server",
+  "version": "1.0.0",
+  "description": "voting system server side",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "NODE_ENV=development nodemon --ignore '*swagger.json' index.js",
+    "container": "NODE_ENV=container nodemon index.js"
+  },
+  "keywords": [
+    "nodejs",
+    "express"
+  ],
+  "author": "SauveJeanLuc",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "joi": "^17.6.0",
+    "joi-password": "^3.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.4.1",
+    "nodemon": "^2.0.18",
+    "swaggiffy": "^1.0.4"
+  }
 }
